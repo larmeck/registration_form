@@ -40,8 +40,8 @@ else {
 }
 
 // SQL query to insert form data into database
-$sql = "INSERT INTO registration_details (first_name,second_name,sur_name,email,alternative_email,student_password,confirmation_password,adm_number,country,country_province,estate,native_language,former_high_school,exam_grade,disability,number_of_brothers,number_of_sisters,gender,date_of_birth,prog_language)
-VALUES ('$student_first_name','$student_second_name','$student_sur_name','$student_email','$student_alternative_email','$student_password_set','$student_confirm_password_set','$student_adm_number','$student_country','$student_country_province','$student_estate','$student_native_language','$student_former_highschool','$student_exam_grade','$student_disability','$student_number_of_brothers','$student_number_of_sisters','$student_gender','$student_date_of_birth','$student_prog_language')";
+$sql = "INSERT INTO registration_details (first_name,second_name,sur_name,alternative_email,student_password,confirmation_password,adm_number,country,country_province,estate,native_language,former_high_school,exam_grade,disability,number_of_brothers,number_of_sisters,gender,date_of_birth,prog_language)
+VALUES ('$student_first_name','student_second_name','$student_sur_name','$student_email','$student_alternative_email','$student_password_set','$student_confirm_password_set','$student_adm_number','$student_country','$student_country_province','$student_estate','$student_native_language','$student_former_highschool','$student_exam_grade','$student_disability','$student_number_of_brothers','$student_number_of_sisters','$student_gender','$student_date_of_birth','$student_prog_language')";
 
 // Executing SQL query
 if(mysqli_query($conn, $sql)) {
