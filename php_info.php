@@ -3,5 +3,6 @@
 
 phpinfo();
 
+echo "a test project";
 
 ?>
